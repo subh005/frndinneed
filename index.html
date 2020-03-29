@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Enjoy Indoors</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<style type="text/css">
+body{  background:#FEEAE6; font-family: 'PT Serif', serif;}
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Roboto', ;
+    }
+.container{width:350px; margin: auto; }
+.header{ padding:20px 0px;  font-size: 34px; text-align:center; color:#3e2723; font-weight:bold; border-bottom:1px solid #eee; box-shadow: 1px 1px 1px #eee; background-color: #FEDBD0; margin-bottom: 20px;}
+.category-body{width:100%;  margin:auto; }
+.category-text{height:30px; text-align:center; font-size:24px; line-height:30px; margin-top: 80px; color:#5d4037; }
+.category-team{font-size:34px; line-height:55px; text-align:center; padding-top:20%; color:#3e2723; }
+.category-team a{text-decoration: none;}
+.category-button{  padding: 20px 0px; font-size: 24px;  text-align:center; background-color:#3e2723; color:#fff; cursor: pointer; position:fixed; left:5%; bottom: 20px;  width:90%; border-radius:6px; box-shadow: 1px 1px 2px #3e2723;  }
+@media only screen and (max-width: 800px) {
+	.container{width:100%; margin: 0;}
+}
+	
+</style>
+</head>
+<body>
+	<div class="container">
+<div class="header">Frnd In Need</div>
+<div class="category-body">
+	<div class="category-text" id="category-text">Things to Do</div>
+	<div id="showTeam" class="category-team"></div>
+		
+</div>
+</div>
+<div class="category-button" id="category-button" onclick="showRandom()">Next</div>
+<script type="text/javascript">
+	function showRandom(){
+		var myTeam = new Array("Watch a Movie <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Try Out a New Recipe","Video Call your Best Friend","Redo your Space","Listen some Music","Have a Me Time with a Cup of Chai","Have a Me Time with a Cup of Coffee","Clean your Wardrobe","Think About your Office Crush","Listen to some Jazz","Read about Roman Empire","Listen to a Podcast","Meditate","Make your Next 5 Year Plan","Make your Wishlist","Hug your Partner","Call your Mom","Call your Dad","Watch a Animation Movie","Try some DIY","Lear How to Bake a Cake","Do Yoga","Drink Water","Think about Your Dream Car","Read about Inspiring People <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","Try Home Gardening","Take a Photography Cource","Paint your Crush","Write a Poem","Write a Short Story","Workout for 15 Min","Watch a Rom-Com Marathon <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Sing along to some Classics","Plan your Next Getaway","Write a Letter","Learn a New Language","Learn a Dance Move","Start a New Book <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","Try Coloring","Do Zumba","Try Nail Art","Make a Rug using Old Clothes","Try your Old Clothes","Have a Photo Shoot","Learn Calligraphy","Watch a Thriller <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Doodle","Make a Cocktail","Watch a Documentry","Plan your Next Bike Ride","Plan your Next Road Trip","Think about a Startup Idea","Make your Youtube Channel","Write a Thankyou Note","Read a Romantic Novel <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>","Read a E-Book <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>");
+var randomNum = Math.floor(Math.random() * myTeam.length);
+document.getElementById("showTeam").innerHTML = myTeam[randomNum];
+	}
+	
+
+	</script>
+</body>
+</html>
+
+<!-- Created by Subhajit Parida -->
