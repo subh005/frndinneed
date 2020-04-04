@@ -4,8 +4,9 @@
 <title>Enjoy Indoors</title>
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+<meta name="theme-color" contains="#C2185B">
 <style type="text/css">
-body{  background:#FEEAE6; font-family: 'PT Serif', serif;}
+body{  background:#FF0266;  font-family: 'PT Serif', serif;}
 * {
         margin: 0;
         padding: 0;
@@ -18,12 +19,16 @@ body{  background:#FEEAE6; font-family: 'PT Serif', serif;}
         font-family: 'Roboto', ;
     }
 .container{width:350px; margin: auto; }
-.header{ padding:20px 0px;  font-size: 34px; text-align:center; color:#3e2723; font-weight:bold; border-bottom:1px solid #eee; box-shadow: 1px 1px 1px #eee; background-color: #FEDBD0; margin-bottom: 20px;}
+.header{ padding:20px 0px;  font-size: 34px; text-align:center; color:#FFDE03; font-weight:bold; background-color: #FF0266; margin-bottom: 20px; }
 .category-body{width:100%;  margin:auto; }
 .category-text{height:30px; text-align:center; font-size:24px; line-height:30px; margin-top: 80px; color:#5d4037; }
-.category-team{font-size:34px; line-height:55px; text-align:center; padding-top:20%; color:#3e2723; }
+.category-team{ font-size:32px; line-height:60px; text-align:center;  color:#0336FF; padding:0px 10px; }
 .category-team a{text-decoration: none;}
-.category-button{  padding: 20px 0px; font-size: 24px;  text-align:center; background-color:#3e2723; color:#fff; cursor: pointer; position:fixed; left:5%; bottom: 20px;  width:90%; border-radius:6px; box-shadow: 1px 1px 2px #3e2723;  }
+.category-button{  padding: 20px 0px; font-size: 24px;  text-align:center; background-color:#0336FF; color:#fff; cursor: pointer; position:fixed; left:5%; bottom: 20px;  width:90%; border-radius:6px; box-shadow: 1px 1px 2px #3e2723;  }
+.card{display: flex; justify-content: center; align-items: center; width:90%; margin:auto; margin-top: 15%; height:300px; padding:2%; border-radius: 4px; background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12); box-sizing: border-box;
+     }
+
 @media only screen and (max-width: 800px) {
 	.container{width:100%; margin: 0;}
 }
@@ -32,17 +37,19 @@ body{  background:#FEEAE6; font-family: 'PT Serif', serif;}
 </head>
 <body>
 	<div class="container">
-<div class="header">Frnd In Need</div>
+<div class="header">Things to Do</div>
 <div class="category-body">
-	<div class="category-text" id="category-text">Things to Do</div>
-	<div id="showTeam" class="category-team"></div>
-		
+	<div class="card">
+		<div id="showTeam" class="category-team">Hello! <br> Click Next!</div>
+	</div>
+			
 </div>
 </div>
 <div class="category-button" id="category-button" onclick="showRandom()">Next</div>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script type="text/javascript">
 	function showRandom(){
-		var myTeam = new Array("Watch a Movie <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Try Out a New Recipe","Video Call your Best Friend","Redo your Space","Listen some Music","Have a Me Time with a Cup of Chai","Have a Me Time with a Cup of Coffee","Clean your Wardrobe","Think About your Office Crush","Listen to some Jazz","Read about Roman Empire","Listen to a Podcast","Meditate","Make your Next 5 Year Plan","Make your Wishlist","Hug your Partner","Call your Mom","Call your Dad","Watch a Animation Movie","Try some DIY","Lear How to Bake a Cake","Do Yoga","Drink Water","Think about Your Dream Car","Read about Inspiring People <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","Try Home Gardening","Take a Photography Cource","Paint your Crush","Write a Poem","Write a Short Story","Workout for 15 Min","Watch a Rom-Com Marathon <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Sing along to some Classics","Plan your Next Getaway","Write a Letter","Learn a New Language","Learn a Dance Move","Start a New Book <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","Try Coloring","Do Zumba","Try Nail Art","Make a Rug using Old Clothes","Try your Old Clothes","Have a Photo Shoot","Learn Calligraphy","Watch a Thriller <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","Doodle","Make a Cocktail","Watch a Documentry","Plan your Next Bike Ride","Plan your Next Road Trip","Think about a Startup Idea","Make your Youtube Channel","Write a Thankyou Note","Read a Romantic Novel <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>","Read a E-Book <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>");
+		var myTeam = new Array("<i class='fas fa-tv'></i><br>Watch a Movie <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","<i class='fas fa-hamburger'></i><br>Try Out a New Recipe","<i class='fas fa-phone'></i><br>Video Call your Best Friend","<i class='fas fa-couch'></i><br>Redo your Space","<i class='fas fa-music'></i><br> Listen some Music","<i class='fas fa-coffee'></i> <br>Have a Me Time with a Cup of Chai","<i class='fas fa-coffee'></i><br>Have a Me Time with a Cup of Coffee","<i class='fas fa-tshirt'></i><br>Clean your Wardrobe","<i class='fas fa-heart'></i><br>Think About your Office Crush","<i class='fas fa-music'></i><br>Listen to some Jazz","<i class='fas fa-book'></i><br>Read about Roman Empire","<i class='fas fa-podcast'></i><br>Listen to a Podcast","<i class='fas fa-praying-hands'></i><br>Meditate","<i class='fas fa-pen'></i><br>Make your Next 5 Year Plan","<i class='fas fa-list'></i><br>Make your Wishlist","<i class='fas fa-user'></i><br>Hug your Partner","<i class='fas fa-phone'></i><br>Call your Mom","<i class='fas fa-phone'></i><br>Call your Dad","<i class='fas fa-tv'></i><br>Watch a Animation Movie","<i class='fas fa-cut'></i><br>Try some DIY","<i class='fas fa-birthday-cake'></i><br>Lear How to Bake a Cake","<i class='fas fa-praying-hands'></i><br>Do Yoga","<i class='fas fa-glass-whiskey'></i><br>Drink Water","<i class='fas fa-car'></i><br>Think about Your Dream Car","<i class='fas fa-book'></i><br>Read about Inspiring People <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","<i class='fas fa-seedling'></i><br>Try Home Gardening","<i class='fas fa-camera'></i><br>Take a Photography Cource","<i class='fas fa-paint-brush'></i><br>Paint your Crush","<i class='fas fa-pen'></i><br>Write a Poem","<i class='fas fa-pen'></i><br>Write a Short Story","<i class='fas fa-heartbeat'></i><br>Workout for 15 Min","<i class='fas fa-tv'></i><br>Watch a Rom-Com Marathon <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","<i class='fas fa-microphone'></i><br>Sing along to some Classics","<i class='fas fa-road'></i><br>Plan your Next Getaway","<i class='fas fa-pen'></i><br>Write a Letter","<i class='fas fa-language'></i><br>Learn a New Language","<i class='fas fa-music'></i><br>Learn a Dance Move","<i class='fas fa-book'></i><br>Start a New Book to Read <br><a href='https://www.goodreads.com/'>Get Recommendation</a><br>","<i class='fas fa-paint-brush'></i><br>Try Coloring","<i class='fas fa-music'></i><br>Do Zumba","<i class='fas fa-paint-brush'></i><br>Try Nail Art","<i class='fas fa-tshirt'></i><br>Make a Rug using Old Clothes","<i class='fas fa-tshirt'></i><br>Try your Old Clothes","<i class='fas fa-camera'></i><br>Have a Photo Shoot","<i class='fas fa-pen'></i><br>Learn Calligraphy","<i class='fas fa-tv'></i><br>Watch a Thriller <br><a href='https://spacingin.com/'>Get Recommendation</a><br>","<i class='fas fa-pen'></i><br>Doodle","<i class='fas fa-cocktail'></i><br>Make a Cocktail","<i class='fas fa-tv'></i><br>Watch a Documentry","<i class='fas fa-motorcycle'></i><br>Plan your Next Bike Ride","<i class='fas fa-road'></i><br>Plan your Next Road Trip","<i class='fas fa-pen'></i><br>Think about a Startup Idea","<i class='fas fa-play'></i><br>Make your Youtube Channel","<i class='fas fa-pen'></i><br>Write a Thankyou Note","<i class='fas fa-book'></i><br>Read a Romantic Novel <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>","<i class='fas fa-tablet'></i><br>Read a E-Book <br><a href='https://www.juggernaut.in/'>Get Recommendation</a><br>");
 var randomNum = Math.floor(Math.random() * myTeam.length);
 document.getElementById("showTeam").innerHTML = myTeam[randomNum];
 	}
@@ -51,5 +58,3 @@ document.getElementById("showTeam").innerHTML = myTeam[randomNum];
 	</script>
 </body>
 </html>
-
-<!-- Created by Subhajit Parida -->
